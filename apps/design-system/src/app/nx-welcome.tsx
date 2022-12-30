@@ -1,12 +1,5 @@
-import { Button } from "@ds-fnl-concept/ui";
+import { Button, Card, StyledCard } from "@ds-fnl-concept/ui";
 
-/*
- * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- This is a starter component and can be deleted.
- * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- Delete this file and get started with your project!
- * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- */
 export function NxWelcome({ title }: { title: string }) {
   return (
     <>
@@ -422,7 +415,18 @@ export function NxWelcome({ title }: { title: string }) {
               <span> Hello there, </span>
               Welcome to {title} 👋
             </h1>
-            <Button color="primary" onClick={() => alert('Button clicked')} text="Click me!" />
+            <Button
+              color="primary"
+              onClick={() => alert('Button clicked')}
+              text="Click me! - component"
+            />
+            <StyledCard title="Test card from UI library">
+              <Button
+                color="secondary"
+                onClick={() => alert('Button clicked')}
+                text="Click me!"
+              />
+            </StyledCard>
           </div>
         </div>
       </div>

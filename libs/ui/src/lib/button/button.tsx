@@ -9,7 +9,7 @@ interface ButtonProps {
 
 const StyledButton = styled.button<{ color: ButtonProps['color'] }>`
 background-color: ${(props) =>
-  props.color === 'primary' ? '#333' : '#ccc'};
+  props.color === 'primary' ? '#265cd8' : '#11b14c'};
 color: white;
 font-size: 22px;
 padding: 8px 16px;
@@ -20,7 +20,7 @@ cursor: pointer;
 
 &:hover {
   background-color: ${(props) =>
-    props.color === 'primary' ? '#555' : '#eee'};
+    props.color === 'primary' ? '#555' : '#207023'};
 }
 `;
 
